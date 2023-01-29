@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHouse</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5cac1b893e.js" crossorigin="anonymous"></script>
+    <script src="./js.js"></script>
+    <link data-require="fontawesome@5.5.0" data-semver="5.5.0" rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png">
+        </div>
+        <div class="topnav">
+            <input type="text" placeholder="Search.." name="search">
+        </div>
+        <div class="login-container">
+            <a href="./loginpage/index.html" id="login-btn">
+              <i class="fa fa-user-circle"></i>
+            </a>
+          </div>
+          
+        <div id="cart">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-value">4</span>
+            <div id="cart-dropdown">
+              <ul id="cart-items">
+                <li>Apple</li>
+                <li>Milk</li>
+                <li>Breads</li>
+                <li>Cleaner</li>
+              </ul>
+            </div>
+          </div>
+          
+
+    </header>
+
+    <div class="navbar">
+        <div class="navbar-items">
+            <div class="dropdown">
+                <button class="dropbtn">Groceries</button>
+                <div class="dropdown-content">
+                    <a href="#">Staples</a>
+                    <a href="#">Snacks</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Home care</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Home & Kitchen</button>
+                <div class="dropdown-content">
+                    <a href="#">Disposables</a>
+                    <a href="#">Bathroom Accessories</a>
+                    <a href="#">Home Cleaning</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Beauty</button>
+                <div class="dropdown-content">
+                    <a href="#">Skin Care</a>
+                    <a href="#">Fragrences</a>
+                    <a href="#">Mens Grooming</a>
+                    <a href="#">Mom & Baby</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dairy</button>
+                <div class="dropdown-content">
+                    <a href="#">Breads</a>
+                    <a href="#">Milk & Yogurt</a>
+                    <a href="#">Eggs</a>
+                    <a href="#">Biscuits</a>
+                    <a href="#">Chocolates</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sale">
+        <div class="container">
+            <div class="slidder">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/sale.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/sale.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/sale.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="container">
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-user-plus"></i>
+                    <h2>Login or Create<br>an account</h2>
+                    <p>Access your inormation anytime, anywhere.</p>
+                    <a href="./loginpage/index.html" class="butn">Log in / Sign Up</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-truck"></i>
+                    <h2>Free Home Delivery</h2>
+                    <p>Get free home deliveries within 20KM</p>
+                    <a href="./HomeDelivery/index.html" class="butn">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <h2>Cash On Delivery</h2>
+                    <p>Easy Cash On Delivery</p>
+                    <a href="#" class="butn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="categories">
+        <div class="container">
+            <div class="shop-by-categories">
+                <div class="text">
+                    <h2 class="subtitle">Shop By Categories</h2>
+                </div>
+                <div class="items">
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div>
+                        <button class="btn" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="banner">
+        <div class="container">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="./images/sale.png">
+                    </div>
+                    <div class="col">
+                        <img src="./images/sale.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="./images/sale.png">
+                    </div>
+                    <div class="col">
+                        <img src="./images/sale.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories">
+        <div class="container">
+            <div class="shop-by-categories">
+                <div class="text">
+                    <h2 class="subtitle">Top Deals</h2>
+                </div>
+                <div class="items">
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div><a href="./TopDeals/index.html">
+                        <button class="btn" type="button"><i class="fa-solid fa-chevron-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="featuered">
+        <div class="featuered-items">
+            <div class="text">
+                <h2 class="subtitle">Features Brands</h2>
+            </div>
+            <div class="offers-list">
+                <div class="row">
+                    <div class="col">
+                        <img src="./images/sale.png">
+                    </div>
+                    <div class="col">
+                        <img src="./images/sale.png">
+                    </div>
+                    <div class="col">
+                        <img src="./images/sale.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories">
+        <div class="container">
+            <div class="shop-by-categories">
+                <div class="text">
+                    <h2 class="subtitle">Daily Kitchen Essentials</h2>
+                </div>
+                <div class="items">
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div class="categories-item">
+                        <img src="./images/product.png">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, temporibus!</p>
+                    </div>
+                    <div><a href="./KitchenEssentials/index.html">
+                        <button class="btn" type="button"><i class="fa-solid fa-chevron-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offeres">
+        <div class="offers-list">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/sale.png">
+                </div>
+                <div class="col">
+                    <img src="./images/sale.png">
+                </div>
+                <div class="col">
+                    <img src="./images/sale.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+                <h3>Connect</h3>
+                <p>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Rastogi Colony, Adra
+                </p>
+                <div class="social">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-twitter-square"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="column link">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="column subscribe">
+                <h3>Newsletter</h3>
+                <div>
+                    <input type="email" placeholder="Your email id here" />
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row copyright">
+            <div class="footer-menu">
+
+                <a href="">Home</a>
+                <a href="">Cookies Policy</a>
+                <a href="">Terms Of Service</a>
+                <a href="">Support</a>
+
+            </div>
+            <p>Copyright &copy; 2023</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

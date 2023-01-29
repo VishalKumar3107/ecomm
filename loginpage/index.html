@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/SignUp</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <center><img src="./images/logo.png"></center>
+            </a>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="center-container">
+            <div class="image-container">
+                <img src="../images/product.png" alt="website image 1" style="height: 300px; width: 300px;">
+                <img src="../images/product.png" alt="website image 2" style="height: 300px; width: 300px;">
+                <img src="../images/product.png" alt="website image 3" style="height: 300px; width: 300px;">
+                <img src="../images/product.png" alt="website image 4" style="height: 300px; width: 300px;">
+            </div>
+            <div class="login-signup-container">
+                <div class="tab-container">
+                    <div class="tab-item active" id="login-tab">Login</div>
+                    <div class="tab-item" id="signup-tab">Sign Up</div>
+                </div>
+                <form id="login-form">
+                    <input type="text" placeholder="Username or Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit">Log In</button>
+                </form>
+                <form id="signup-form" style="display: none;">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+
+
+        <div class="row copyright">
+            <div class="footer-menu">
+
+                <a href="../index.html">Home</a>
+                <a href="">Cookies Policy</a>
+                <a href="">Terms Of Service</a>
+                <a href="">Support</a>
+
+            </div>
+            <p>Copyright &copy; 2023</p>
+        </div>
+    </footer>
+
+    <script>
+        const loginTab = document.getElementById('login-tab');
+        const signupTab = document.getElementById('signup-tab');
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+
+        loginTab.addEventListener('click', () => {
+            loginTab.classList.add('active');
+            signupTab.classList.remove('active');
+            loginForm.style.display = "block";
+            signupForm.style.display = "none";
+        });
+
+        signupTab.addEventListener('click', () => {
+            signupTab.classList.add('active');
+            loginTab.classList.remove('active');
+            signupForm.style.display = "block";
+            loginForm.style.display = "none";
+        });
+
+        // add this code to make sure the signup form is hidden by default
+        signupForm.style.display = "none";
+    </script>
+</body>
+
+</html>
